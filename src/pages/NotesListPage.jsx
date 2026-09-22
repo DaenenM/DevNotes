@@ -39,8 +39,8 @@ export default function NotesListPage({ notes }){
 
     return (
         <div>
-            <header className="mb-8">
-                <h1 className="text-2xl font-semibold tracking-tight">Notes</h1>
+            <header className="mb-6 sm:mb-8">
+                <h1 className="text-xl sm:text-2xl font-semibold tracking-tight">Notes</h1>
                 <p className="opacity-60 mt-1">
                     {isFiltered
                         ? `${visibleNotes.length} of ${notes.length} notes`
@@ -49,7 +49,7 @@ export default function NotesListPage({ notes }){
             </header>
 
             <div className="relative">
-                <aside className="lg:absolute lg:right-full lg:mr-8 lg:w-[300px] lg:h-full mb-8 lg:mb-0">
+                <aside className="xl:absolute xl:right-full xl:mr-8 xl:w-[300px] xl:h-full mb-6 sm:mb-8 xl:mb-0">
                     <FilterSearch
                         notes={notes}
                         filter={filter}

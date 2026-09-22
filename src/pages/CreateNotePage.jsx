@@ -17,13 +17,13 @@ export default function CreateNotePage({ notes }){
 
     return (
         <div>
-            <header className="mb-8">
-                <h1 className="text-2xl font-semibold tracking-tight">New Note</h1>
+            <header className="mb-6 sm:mb-8">
+                <h1 className="text-xl sm:text-2xl font-semibold tracking-tight">New Note</h1>
                 <p className="opacity-60 mt-1">Add a snippet to your collection.</p>
             </header>
 
             <div className="card bg-base-100 border border-base-300">
-                <div className="card-body">
+                <div className="card-body p-4 sm:p-6">
                     {isPending && (
                         <div className="flex items-center gap-2 text-sm opacity-70">
                             <span className="loading loading-spinner loading-sm" />

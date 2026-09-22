@@ -12,7 +12,7 @@ function App() {
       <div className='bg-base-200 min-h-screen'>
         {/* A small floating menu rather than a full-width bar, so the list
             gets the whole width of the page. */}
-        <div className="sticky top-0 z-20 px-6 pt-4">
+        <div className="sticky top-0 z-20 px-4 sm:px-6 pt-3 sm:pt-4">
           <div className="dropdown">
             <div
               tabIndex={0}
@@ -49,7 +49,7 @@ function App() {
           </div>
         </div>
 
-        <main className="px-6 pt-6 pb-12 max-w-4xl mx-auto">
+        <main className="px-4 sm:px-6 pt-6 pb-12 w-full max-w-4xl mx-auto">
           {isLoading && (
             <div className="flex justify-center py-20">
               <span className="loading loading-spinner loading-lg" />

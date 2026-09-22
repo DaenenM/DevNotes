@@ -78,7 +78,7 @@ export default function NoteForm({ notes, onSubmit, initialNote, submitLabel, on
 
     return (
         <div>
-            <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+            <form onSubmit={handleSubmit} className="flex flex-col gap-4 sm:gap-5">
                 <div>
                     <label className="form-control w-full">
                         <div className="label pb-1">
@@ -274,17 +274,17 @@ export default function NoteForm({ notes, onSubmit, initialNote, submitLabel, on
                     )}
                 </div>
 
-                <div className="card-actions justify-end pt-4 border-t border-base-300 mt-2">
+                <div className="card-actions flex-col-reverse sm:flex-row sm:justify-end gap-2 pt-4 border-t border-base-300 mt-2">
                     {onCancel && (
                         <button
                             type="button"
                             onClick={onCancel}
-                            className="btn btn-ghost"
+                            className="btn btn-ghost w-full sm:w-auto"
                         >
                             Cancel
                         </button>
                     )}
-                    <button type="submit" className="btn btn-primary px-8">
+                    <button type="submit" className="btn btn-primary w-full sm:w-auto sm:px-8">
                         {submitLabel ?? 'Create Note'}
                     </button>
                 </div>

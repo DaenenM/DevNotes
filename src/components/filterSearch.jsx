@@ -43,10 +43,10 @@ export default function FilterSearch({ notes, filter, onChange }) {
     }
 
     return (
-        <div className="card bg-base-100 border border-base-300 rounded-xl lg:sticky lg:top-20 lg:max-h-[calc(100vh-6rem)] overflow-y-auto">
-            <div className="card-body p-5 gap-4">
-                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
-                    <label className="form-control w-full sm:col-span-2 lg:col-span-1">
+        <div className="card bg-base-100 border border-base-300 rounded-xl xl:sticky xl:top-20 xl:max-h-[calc(100vh-6rem)] overflow-y-auto">
+            <div className="card-body p-4 sm:p-5 gap-3 sm:gap-4">
+                <div className="grid gap-3 sm:gap-4 sm:grid-cols-2 xl:grid-cols-1">
+                    <label className="form-control w-full sm:col-span-2 xl:col-span-1">
                         <div className="label pb-1">
                             <span className="label-text font-medium">Search</span>
                         </div>
