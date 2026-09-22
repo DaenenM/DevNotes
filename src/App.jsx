@@ -2,13 +2,13 @@ import { useNotes } from './hooks/useNotes'
 import NotesListPage from './pages/NotesListPage'
 import CreateNotePage from './pages/CreateNotePage'
 import EditNotePage from './pages/EditNotePage'
-import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom'
+import { HashRouter, Routes, Route, NavLink } from 'react-router-dom'
 
 function App() {
   const { notes, isLoading, isError, error } = useNotes()
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className='bg-base-200 min-h-screen'>
         {/* A small floating menu rather than a full-width bar, so the list
             gets the whole width of the page. */}
@@ -70,7 +70,7 @@ function App() {
           )}
         </main>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
