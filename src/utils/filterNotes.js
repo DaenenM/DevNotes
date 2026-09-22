@@ -62,8 +62,9 @@ function matchesTerm(haystackWords, haystack, term) {
 function searchableText(note) {
     const fields = SEARCHABLE.map((field) => note[field] ?? '')
     const tags = note.tags?.join(' ') ?? ''
+    const table = note.table?.rows.flat().join(' ') ?? ''
 
-    return [...fields, tags].join(' ').toLowerCase()
+    return [...fields, tags, table].join(' ').toLowerCase()
 }
 
 export function filterNotes(notes, filter, isFavourite) {
